@@ -6,6 +6,8 @@ services:
     buildCommand: npm install --prefix server && npm install --prefix frontend && npm run build --prefix frontend
     startCommand: node server/server.js
     envVars:
+      - key: NODE_VERSION
+        value: 22
       - key: NODE_ENV
         value: production
       - key: PORT
