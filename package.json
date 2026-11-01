@@ -1,0 +1,22 @@
+{
+  "name": "online-shopping-tw3",
+  "version": "1.0.0",
+  "description": "Full-Stack MERN Online Shopping Platform with Hierarchical Categories",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:all": "npm install && npm --prefix frontend install",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
+    "seed": "node server/seed.js",
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "dev:server": "node --watch server/server.js",
+    "dev:frontend": "npm --prefix frontend run dev"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  }
+}
